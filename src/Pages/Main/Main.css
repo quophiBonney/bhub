@@ -1,0 +1,45 @@
+.main {
+    background: #000;
+}
+.aboutColumn {
+    margin-top: 50px;
+    color: white;
+  }
+  .fade-text {
+    color: rgb(196, 194, 194);
+    font-size: 18px;
+  }
+  .main-text {
+    font-size: 50px;
+    margin-top: 70px;
+    font-family: fantasy;
+    line-height: 70px;
+    font-weight: 200;
+  }
+  .connect-btn {
+    font-family: 'roboto', sans-serif;
+    text-align: center;
+    font-weight: 600;
+    background: rgb(232, 55, 55);
+    border: none;
+  }
+  .main-img {
+    width: 600;
+    height: 600px;
+    object-fit: cover;
+    margin-top: 40px;
+    border-radius: 0% 15% 0% 15%/ 0% 15% 0% 15%;
+  }
+.emoji {
+  font-size: 25px;
+}
+@media screen and (max-width: 768px) {
+    .main-text {
+      font-size: 30px;
+      line-height: 1.4;
+      margin: 0;
+    }
+    .main-img {
+        display: none;
+    }
+}

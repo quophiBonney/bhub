@@ -1,0 +1,19 @@
+body {
+    background-color: white;
+}.form-container {
+    margin-top: 60px;
+}
+.form-title{
+    font-family: fantasy;
+    font-weight: bold;
+}
+.space-btn {
+    justify-content: space-between;
+}
+a {
+    color: gray;
+    font-size: 16px;
+}
+.linkedin, .ig, .fb, .twitter {
+    font-size: 20px;
+}

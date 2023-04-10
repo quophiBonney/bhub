@@ -1,0 +1,25 @@
+.navbg {
+    height: 120px;
+}
+.logo {
+    width: 155px;
+    object-fit: cover;
+}
+.login-btn {
+    background: white;
+}
+.login-btn:hover {
+    background: black;
+    color: white;
+    display:none;
+}
+@media screen and (max-width: 768px) {
+    .navbg {
+        height: auto;
+    }
+    .logo {
+        width: 70px;
+        height: 70px;
+        object-fit: cover;
+    }
+}

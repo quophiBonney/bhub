@@ -1,7 +1,7 @@
 .navbg {
     height: 120px;
 }
-.logo {
+#logo {
     width: 155px;
     object-fit: cover;
 }

@@ -17,3 +17,16 @@ a {
 .linkedin, .ig, .fb, .twitter {
     font-size: 20px;
 }
+
+
+@media screen and (max-width: 768px) {
+    .second-con {
+        display: none;
+    }
+    .login-btns {
+        display: block;
+    }
+    .space-btn {
+        display: block;
+    }
+}

@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import logobgless from '../../assets/logobgless.png';
 import { Container, Nav, Navbar, Button } from 'react-bootstrap';
-import './Header.css';
+import HeaderCSS from './Header.module.css';
 
 function Header(props) {
   return (
@@ -10,7 +10,7 @@ function Header(props) {
       <Navbar expand="lg" className="navbg fixed-top mb-5">
         <Container>
           <Navbar.Brand href="#home">
-            <img src={logobgless} className="img-fluid img-responsive logo" alt="" />
+            <img src={logobgless} className="img-fluid img-responsive" alt=""  id={HeaderCSS.logo}/>
           </Navbar.Brand>
           <Navbar.Toggle
             aria-controls="basic-navbar-nav"

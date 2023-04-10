@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {Container, Row, Col, Button} from "react-bootstrap";
 import main from "../../assets/main.jpg";
 import {
@@ -6,10 +6,15 @@ import {
   BsFillChatLeftTextFill,
   BsFillEmojiLaughingFill,
 } from "react-icons/bs";
-import "./Main.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import MainCSS from "./Main.module.css";
 import {Link} from "react-router-dom";
 
 const Main = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div>
       <Container className="mt-5">
@@ -22,17 +27,18 @@ const Main = () => {
             data-aos="slide-right"
             data-aos-duration="2000"
             data-aos-delay="100"
-            className="aboutColumn px-4"
+            className="px-4"
+            id={MainCSS.aboutColumn}
           >
-            <h3 className="main-text">
+            <h3 className={MainCSS.maintext}>
               The exciting way of being motivated and create happiness forever.
             </h3>
-            <p className="fade-text">
+            <p className={MainCSS.fadetext}>
               Become the best version of yourself as our plaftfomrmotivates
               through insprational quotes, music, gifs and many more.
             </p>
             <Link to="/login">
-              <Button className="connect-btn py-2 mt-4">
+              <Button className="py-2 mt-4" id={MainCSS.connectbtn}>
                 Write Your Quotes
                 <BsFillPeopleFill className="m-2" />
               </Button>
@@ -43,15 +49,15 @@ const Main = () => {
                 md={4}
                 lg={4}
                 className="mt-4"
-                data-aos="slide-up"
+                data-aos="zoom-in"
                 data-aos-duration="1000"
                 data-aos-delay="100"
               >
-                <BsFillChatLeftTextFill className="emoji" />
+                <BsFillChatLeftTextFill className={MainCSS.emoji} />
                 <p>
                   <strong>Chat us</strong>
                   <br />
-                  <span className="fade-text">
+                  <span className={MainCSS.fadetext}>
                     Be the change with your thoughts.
                   </span>
                 </p>
@@ -61,15 +67,17 @@ const Main = () => {
                 md={4}
                 lg={4}
                 className="mt-4"
-                data-aos="slide-up"
+                data-aos="zoom-in"
                 data-aos-duration="1000"
                 data-aos-delay="100"
               >
-                <BsFillEmojiLaughingFill className="emoji" />
+                <BsFillEmojiLaughingFill className={MainCSS.emoji} />
                 <p>
                   <strong>Be happy</strong>
                   <br />
-                  <span className="fade-text">We put smiles on your face.</span>
+                  <span className={MainCSS.fadetext}>
+                    We put smiles on your face.
+                  </span>
                 </p>
               </Col>
               <Col
@@ -77,7 +85,7 @@ const Main = () => {
                 md={4}
                 lg={4}
                 className="mt-4"
-                data-aos="slide-up"
+                data-aos="zoom-in"
                 data-aos-duration="1000"
                 data-aos-delay="100"
               >
@@ -100,9 +108,10 @@ const Main = () => {
             data-aos="slide-left"
             data-aos-duration="2000"
             data-aos-delay="1000"
-            className="aboutColumn px-4"
+            className="px-4"
+            id={MainCSS.aboutColumn}
           >
-            <img src={main} alt="" className="main-img img-fluid" />
+            <img src={main} alt="" className="img-fluid" id={MainCSS.mainImg} />
           </Col>
         </Row>
       </Container>

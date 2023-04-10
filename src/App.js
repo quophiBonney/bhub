@@ -6,7 +6,6 @@ import Login from '../src/Pages/Login/Login';
 import Signup from "./Pages/Signup/Signup";
 import Main from "./Pages/Main/Main";
 function App() {
- 
   return (
     <div>
       <BrowserRouter>

@@ -13,22 +13,21 @@ body {
     font-size: 18px;
   }
   .maintext {
-    font-size: 50px;
+    font-size: 45px;
     margin-top: 70px;
     font-family: fantasy;
-    line-height: 70px;
-    font-weight: 200;
+    line-height: 60px;
+    font-weight: 900;
   }
   #connectbtn {
-    font-family: 'roboto', sans-serif;
     text-align: center;
     font-weight: 600;
-    background: rgb(232, 55, 55);
+    background: rgb(242, 24, 53);
     border: none;
   }
   #mainImg {
-    width: 600;
-    height: 600px;
+    width: 650;
+    height: 550px;
     object-fit: cover;
     margin-top: 40px;
     border-radius: 0% 15% 0% 15%/ 0% 15% 0% 15%;
@@ -42,7 +41,7 @@ body {
       line-height: 1.4;
       margin: 0;
     }
-    .main-img {
+    #mainImg{
         display: none;
     }
 }

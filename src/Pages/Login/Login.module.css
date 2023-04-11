@@ -1,6 +1,4 @@
-body {
-    background-color: white;
-}.form-container {
+.form-container {
     margin-top: 60px;
 }
 .form-title{
@@ -17,14 +15,17 @@ a {
 .linkedin, .ig, .fb, .twitter {
     font-size: 20px;
 }
+img {
+    width: 100%;
+}
 
 
 @media screen and (max-width: 768px) {
     .second-con {
         display: none;
     }
-    .login-btns {
-        display: block;
+    #loginContainer {
+       width: 100%;
     }
     .space-btn {
         display: block;

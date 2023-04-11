@@ -1,6 +1,8 @@
 import React from "react";
+import {useLocation} from "react-router-dom";
 import {Container, Row, Col} from "react-bootstrap";
 import connectimg from "../../assets/connectimg.jpeg";
+import Header from "../../Components/Header/Header";
 import {
   BsFacebook,
   BsGoogle,
@@ -8,23 +10,31 @@ import {
   BsLinkedin,
   BsTwitter,
 } from "react-icons/bs";
-import "./Login.css";
+import LoginCSS from "./Login.module.css";
 import {Link} from "react-router-dom";
 const Login = () => {
   return (
-    <div className="container-fluid form-container">
-      <Row className="justify-content-center">
-        <Col sm={12} md={5} lg={5} className="px-4">
+    <Container className="container-fluid form-container">
+      <Row className="">
+        <Col sm={12} md={5} lg={5}>
           <h3 className="form-title text-center py-3">Login to Your Account</h3>
           <div className="row justify-content-center">
             <div className="col-xs-12 col-sm-12 col-md-6 mt-3">
-              <a href="" className="btn btn-primary py-3">
+              <a
+                href=""
+                className="btn btn-primary py-3"
+                id={LoginCSS.loginContainer}
+              >
                 <BsFacebook className="m-2" />
                 Login With Facebook
               </a>
             </div>
             <div className="col-xs-12 col-sm-12 col-md-6 mt-3">
-              <a href="" className="btn btn-dark py-3">
+              <a
+                href=""
+                className="btn btn-dark py-3"
+                id={LoginCSS.loginContainer}
+              >
                 <BsGoogle className="m-2" />
                 Login With Google
               </a>
@@ -78,10 +88,14 @@ const Login = () => {
           </form>
         </Col>
         <Col sm={12} md={7} lg={7} className="second-con">
-          <img src={connectimg} className="img-fluid img-responsive" />
+          <img
+            src={connectimg}
+            className="img-fluid img-responsive"
+            id={LoginCSS.img}
+          />
         </Col>
       </Row>
-    </div>
+    </Container>
   );
 };
 

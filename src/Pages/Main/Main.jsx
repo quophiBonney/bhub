@@ -38,7 +38,7 @@ const Main = () => {
               through insprational quotes, music, gifs and many more.
             </p>
             <Link to="/login">
-              <Button className="py-2 mt-4" id={MainCSS.connectbtn}>
+              <Button className="btn py-2 mt-4" id={MainCSS.connectbtn}>
                 Write Your Quotes
                 <BsFillPeopleFill className="m-2" />
               </Button>

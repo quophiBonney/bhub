@@ -5,6 +5,7 @@ import Header from '../src/Components/Header/Header';
 import Login from '../src/Pages/Login/Login';
 import Signup from "./Pages/Signup/Signup";
 import Main from "./Pages/Main/Main";
+import Timeline from "./Pages/Timeline/Timeline";
 function App() {
   return (
     <div>
@@ -16,6 +17,7 @@ function App() {
         <Route path="/signup" element={<Signup/>} />
       </Routes>
       </BrowserRouter>
+      <Timeline/>
     </div>
   );
 }

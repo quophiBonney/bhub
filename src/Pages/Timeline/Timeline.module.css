@@ -1,0 +1,40 @@
+.gap {
+    margin-top: 90px;
+}
+.sectitle {
+   margin-top: 80px;
+   color: #fff;
+   font-size: 17px;
+   font-weight: 300;
+}
+.largeText {
+    font-size: 45px;
+    font-weight: 900;
+    line-height: 60px;
+    color: #fff;
+}
+.fadeText {
+    font-size: 18px;
+    color: rgb(171, 171, 171);
+}
+#startWriting {
+    background: rgb(242, 24, 53);
+    font-weight: 600;
+    border: none;
+}
+#img {
+    height: 550px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .largeText {
+        font-size: 30px;
+        line-height: 1.4;
+    }
+    #img {
+        height: 400px;
+        object-fit: cover;
+    }
+}

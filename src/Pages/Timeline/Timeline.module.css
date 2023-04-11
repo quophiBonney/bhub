@@ -10,6 +10,7 @@
 .largeText {
     font-size: 45px;
     font-weight: 900;
+    font-family: fantasy;
     line-height: 60px;
     color: #fff;
 }
@@ -29,6 +30,9 @@
 }
 
 @media screen and (max-width: 768px) {
+    .sectitle {
+        margin-top: 10px;
+    }
     .largeText {
         font-size: 30px;
         line-height: 1.4;

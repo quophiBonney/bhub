@@ -3,7 +3,7 @@ import TimelineCSS from "./Timeline.module.css";
 import {Container, Row, Col, Button} from "react-bootstrap";
 import Side from "../../assets/side.jpg";
 import {BsFillChatLeftTextFill} from "react-icons/bs";
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 function Timeline() {
   return (
     <Container className={TimelineCSS.gap}>
@@ -43,10 +43,14 @@ function Timeline() {
             food for thought could be the life-changing moment in someone's
             life. Be the change with your thoughts!
           </p>
-          <Button className="btn py-2 mt-2" id={TimelineCSS.startWriting}>
+          <NavLink
+            to="/login"
+            className="btn py-2 mt-2 text-light"
+            id={TimelineCSS.startWriting}
+          >
             Start Writing
             <BsFillChatLeftTextFill className="m-2" />
-          </Button>
+          </NavLink>
         </Col>
       </Row>
     </Container>

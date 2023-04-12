@@ -24,7 +24,7 @@
     border: none;
 }
 #img {
-    height: 550px;
+    height: 600px;
     object-fit: cover;
     border-radius: 20px;
 }

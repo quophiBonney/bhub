@@ -1,6 +1,9 @@
 import React, {useEffect} from "react";
 import {Container, Row, Col, Button} from "react-bootstrap";
 import main from "../../assets/main.jpg";
+import Timeline from "../Timeline/Timeline";
+import Connect from "../Connect/Connect";
+import Happy from "../Happy/Happy";
 import {
   BsFillPeopleFill,
   BsFillChatLeftTextFill,
@@ -115,6 +118,9 @@ const Main = () => {
           </Col>
         </Row>
       </Container>
+      <Timeline />
+      <Connect />
+      <Happy />
     </div>
   );
 };

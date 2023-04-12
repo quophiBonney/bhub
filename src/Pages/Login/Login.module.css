@@ -1,33 +1,33 @@
-.form-container {
-    margin-top: 60px;
+#signupForm {
+    height: 100vh;
+    background: white;
 }
-.form-title{
+.secondcon {
+    height: 100vh;
+    background: white;
+}
+#formtitle {
     font-family: fantasy;
     font-weight: bold;
 }
-.space-btn {
-    justify-content: space-between;
+.btnGroup {
+    display: flex;
 }
-a {
-    color: gray;
-    font-size: 16px;
-}
-.linkedin, .ig, .fb, .twitter {
-    font-size: 20px;
-}
-img {
+#signupImg {
     width: 100%;
+    object-fit: cover;
+    height: 550px;
 }
-
 
 @media screen and (max-width: 768px) {
-    .second-con {
-        display: none;
-    }
-    #loginContainer {
-       width: 100%;
-    }
-    .space-btn {
+    .btnGroup {
         display: block;
+        margin-top: 80px;
+    }
+    .btnGroup a {
+        width: 100%;
+    }
+    .secondcon {
+        display: none;
     }
 }

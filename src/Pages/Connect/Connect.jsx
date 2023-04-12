@@ -18,7 +18,7 @@ const Connect = () => {
             data-aos="zoom-in"
             data-aos-duration="2000"
             data-aos-delay="100"
-            className="aboutColumn px-4"
+            className="mb-5 px-4"
           >
             <h5 className={ConnectCSS.sectitle}>Connect</h5>
             <h3 className={ConnectCSS.largeText}>

@@ -20,7 +20,7 @@ const Main = () => {
   }, []);
   return (
     <div>
-      <Container className="mt-5">
+      <Container className={MainCSS.mainColumn}>
         <Row className="justify-content-center">
           <Col
             sm={12}
@@ -31,9 +31,8 @@ const Main = () => {
             data-aos-duration="2000"
             data-aos-delay="100"
             className="px-4"
-            id={MainCSS.aboutColumn}
           >
-            <h3 className={MainCSS.maintext}>
+            <h3 className={MainCSS.mainText}>
               The exciting way of being motivated and create happiness forever.
             </h3>
             <p className={MainCSS.fadetext}>
@@ -112,7 +111,7 @@ const Main = () => {
             data-aos-duration="2000"
             data-aos-delay="1000"
             className="px-4"
-            id={MainCSS.aboutColumn}
+            id={MainCSS.secColumn}
           >
             <img src={main} alt="" className="img-fluid" id={MainCSS.mainImg} />
           </Col>

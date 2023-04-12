@@ -7,7 +7,6 @@ import {NavLink} from "react-router-dom";
 function Happy() {
   return (
     <div>
-      {" "}
       <Container className="mt-5">
         <Row className="justify-content-center">
           <Col
@@ -30,7 +29,7 @@ function Happy() {
             data-aos="zoom-in"
             data-aos-duration="2000"
             data-aos-delay="100"
-            className="aboutColumn px-4"
+            className="mb-5 px-4"
           >
             <h5 className={HappyCSS.sectitle}>HAPPY</h5>
             <h3 className={HappyCSS.largeText}>

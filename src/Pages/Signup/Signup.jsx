@@ -12,11 +12,11 @@ const Signup = () => {
     console.log(data);
   });
   return (
-    <div className={SignupCSS.signupbg}>
+    <div>
       <div className="container-fluid form-container">
         <Row className="justify-content-center">
-          <Col sm={12} md={5} lg={5} className="px-4">
-            <h3 className="text-center py-3" id={SignupCSS.formtitle}>
+          <Col sm={12} md={5} lg={5} className="px-4" id={SignupCSS.signupForm}>
+            <h3 className="text-center mt-5 py-3" id={SignupCSS.formtitle}>
               Signup to Your Account
             </h3>
             <FormProvider {...methods}>

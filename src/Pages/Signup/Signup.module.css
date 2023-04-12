@@ -1,7 +1,10 @@
-.signupbg {
+#signupForm {
+    height: 100vh;
     background: white;
-    height: 100%;
-    width: 100%;
+}
+.secondcon {
+    height: 100vh;
+    background: white;
 }
 #formtitle {
     font-family: fantasy;

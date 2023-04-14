@@ -6,7 +6,7 @@ import {BsFillChatLeftTextFill} from "react-icons/bs";
 import {NavLink} from "react-router-dom";
 function Timeline() {
   return (
-    <Container className={TimelineCSS.gap}>
+    <Container className="mt-5">
       <Row className="justify-content-center">
         <Col
           sm={12}

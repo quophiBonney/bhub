@@ -5,19 +5,20 @@ import Header from '../src/Components/Header/Header';
 import Login from '../src/Pages/Login/Login';
 import Signup from "./Pages/Signup/Signup";
 import Main from "./Pages/Main/Main";
-import Timeline from "./Pages/Timeline/Timeline";
+import Footer from "./Components/Footer/Footer";
 function App() {
   return (
+    <div>
     <Router>
-      <div>
        <Header/>
        <Routes>
-        <Route exact path="/" Component={Main}/>
-        <Route path="/login" Component={Login}/>
-        <Route path="/signup" Component={Signup}/>
-       </Routes>
-      </div>
+        <Route path="/" exact Component={Main}/>
+        <Route path="/login" exact Component={Login}/>
+        <Route path="/signup" exact Component={Signup}/>
+        </Routes>
+        <Footer/>
     </Router>
+    </div>
   );
 }
 

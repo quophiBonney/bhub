@@ -27,16 +27,16 @@ const Signup = () => {
                     type="email"
                     placeholder="Email Address"
                     required=""
-                    className="py-3 form-control"
+                    className="py-2 form-control"
                   />
                 </div>
                 <div className="form-group mt-3">
                   <input
                     label="date of birth"
                     type="date"
-                    placeholder="Password"
+                    placeholder="date"
                     required=""
-                    className="py-3 form-control"
+                    className="py-2 form-control"
                   />
                 </div>
                 <div className="form-group mt-3">
@@ -45,7 +45,7 @@ const Signup = () => {
                     type="password"
                     placeholder="Password"
                     required=""
-                    className="py-3 form-control"
+                    className="py-2 form-control"
                   />
                 </div>
                 <div className="form-group mt-3">
@@ -54,7 +54,7 @@ const Signup = () => {
                     type="password"
                     placeholder="Confirm Password"
                     required=""
-                    className="py-3 form-control"
+                    className="py-2 form-control"
                   />
                 </div>
                 <div className="form-group mt-3">
@@ -62,7 +62,7 @@ const Signup = () => {
                     type="submit"
                     value="Signup"
                     onSubmit={onSubmit}
-                    className="btn btn-danger py-3 form-control"
+                    className="btn btn-danger py-2 form-control"
                   />
                 </div>
                 <div className="text-center mt-3 ">

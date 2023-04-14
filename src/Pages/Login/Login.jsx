@@ -31,7 +31,7 @@ const Login = () => {
               <div className="col-xs-12 col-sm-12 col-md-6 mt-3">
                 <a
                   href=""
-                  className="btn btn-dark py-3"
+                  className="btn btn-dark py-2"
                   id={LoginCSS.loginContainer}
                 >
                   <BsGoogle className="m-2" />
@@ -39,7 +39,7 @@ const Login = () => {
                 </a>
               </div>
             </div>
-            <h3 className="text-center mt-3 py-3" id={LoginCSS.formtitle}>
+            <h3 className="text-center mt-3 py-2" id={LoginCSS.formtitle}>
               Login to Your Account
             </h3>
             <form onSubmit={e => e.preventDefault()} noValidate>
@@ -49,7 +49,7 @@ const Login = () => {
                   type="email"
                   placeholder="Email Address"
                   required=""
-                  className="py-3 form-control"
+                  className="py-2 form-control"
                 />
               </div>
               <div className="form-group mt-3">
@@ -58,14 +58,14 @@ const Login = () => {
                   type="password"
                   placeholder="Password"
                   required=""
-                  className="py-3 form-control"
+                  className="py-2 form-control"
                 />
               </div>
               <div className="form-group mt-3">
                 <input
                   type="submit"
                   value="Signup"
-                  className="btn btn-danger py-3 form-control"
+                  className="btn btn-danger py-2 form-control"
                 />
               </div>
               <div className="text-center mt-3 ">
